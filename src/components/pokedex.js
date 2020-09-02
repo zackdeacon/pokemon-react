@@ -108,9 +108,11 @@ export default function Pokedex() {
         <>
         <div className="container">
         <div className="row">
+        <p>Total Experience: {exp1}</p>
         {hand1Arr.map((pkmn) => (<Pokecard key={pkmn.id} id={pkmn.id} name={pkmn.name} type={pkmn.type} base_experience={pkmn.base_experience}/>))}
         </div>
         <div className="row">
+        <p>Total Experience: {exp2}</p> 
         {hand2Arr.map((pkmn) => (<Pokecard key={pkmn.id} id={pkmn.id} name={pkmn.name} type={pkmn.type} base_experience={pkmn.base_experience}/>))}
         </div>
         </div>        
