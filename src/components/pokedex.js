@@ -92,6 +92,11 @@ for (let i = 0; i < 12; i++) {
 console.log(hand1Arr)
 console.log(hand2Arr)
 
+let exp1 = hand1Arr.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
+let exp2 = hand2Arr.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
+
+console.log(exp1)
+console.log(exp2)
 
 
 
