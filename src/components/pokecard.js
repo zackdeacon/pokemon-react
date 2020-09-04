@@ -13,8 +13,8 @@ export default function Pokecard(props) {
     const imgSrc = `${pknmAPI}${padToThree(props.id)}.png`
     console.log(imgSrc)
     return (
-        <div className="col-3">
-<div className="card CARD" >
+        <div className="col-4">
+<div className="card CARD animate__animated animate__fadeIn" >
   <div className="card-body">
     <h3 className="card-title pkmnName">{props.name}</h3>
     <div className="pkmnImg img-fluid">

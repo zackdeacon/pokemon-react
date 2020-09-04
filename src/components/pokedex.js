@@ -80,11 +80,11 @@ let hand2Arr = [];
 // let randNum = Math.floor(Math.random() * pokemon.length)
 // console.log(randNum)
 
-for (let i = 0; i < 12; i++) {
+for (let i = 0; i < pokemon.length; i++) {
     let randNum = Math.floor(Math.random() * pokemon.length)
-    if (hand1Arr.length < 6) {
+    if (hand1Arr.length < 6 && !hand1Arr.includes(pokemon[randNum])) {
     hand1Arr.push(pokemon[randNum])
-    } else {
+    } else if (hand2Arr.length < 6 && !hand2Arr.includes(pokemon[randNum])){
         hand2Arr.push(pokemon[randNum])
     }
     
@@ -107,12 +107,14 @@ export default function Pokedex() {
     return (
         <>
         <div className="container">
+        <p className="animate__animated animate__bounceIn">Total Experience: {exp1}</p>
         <div className="row">
-        <p>Total Experience: {exp1}</p>
+        
         {hand1Arr.map((pkmn) => (<Pokecard key={pkmn.id} id={pkmn.id} name={pkmn.name} type={pkmn.type} base_experience={pkmn.base_experience}/>))}
         </div>
+        <p className="animate__animated animate__bounceIn">Total Experience: {exp2}</p> 
         <div className="row">
-        <p>Total Experience: {exp2}</p> 
+        
         {hand2Arr.map((pkmn) => (<Pokecard key={pkmn.id} id={pkmn.id} name={pkmn.name} type={pkmn.type} base_experience={pkmn.base_experience}/>))}
         </div>
         </div>        
