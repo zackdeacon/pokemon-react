@@ -63,7 +63,8 @@
  
 }
 .row {
-  background-color: darkgrey;
+  background-color: lightgray;
+  border-radius: 7px;
 }
 .hvr-float-shadow {
   display: inline-block;
@@ -109,4 +110,25 @@
 
 :root {
   --animate-delay: 3s;
+}
+.container {
+  margin: 50px;
+}
+
+.centerText {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+.winText {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: xx-large;
+  font-weight: bold;
 }

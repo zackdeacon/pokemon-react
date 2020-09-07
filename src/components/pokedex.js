@@ -107,12 +107,16 @@ export default function Pokedex() {
     return (
         <>
         <div className="container">
-        <p className="animate__animated animate__bounceIn">Total Experience: {exp1}</p>
+        <h1 className="winText">IsWinnervsIsLoser</h1>
+        <p className="animate__animated animate__bounceIn centerText">Total Experience: {exp1}</p>
         <div className="row">
         
         {hand1Arr.map((pkmn) => (<Pokecard key={pkmn.id} id={pkmn.id} name={pkmn.name} type={pkmn.type} base_experience={pkmn.base_experience}/>))}
         </div>
-        <p className="animate__animated animate__bounceIn">Total Experience: {exp2}</p> 
+        </div>
+        <div className="container">
+        <h1 className="winText">IsWinnervsIsLoser</h1>
+        <p className="animate__animated animate__bounceIn centerText">Total Experience: {exp2}</p> 
         <div className="row">
         
         {hand2Arr.map((pkmn) => (<Pokecard key={pkmn.id} id={pkmn.id} name={pkmn.name} type={pkmn.type} base_experience={pkmn.base_experience}/>))}
