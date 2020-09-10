@@ -20,3 +20,9 @@ function App() {
 }
 
 export default App;
+
+//TODO
+
+//change CSS so that the two hands are viewed at once on screen side by side
+// Battle button is on center of page 
+// isWinner and total exp are above each respective hand div 
