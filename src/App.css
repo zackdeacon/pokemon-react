@@ -49,11 +49,15 @@
 .pkmnType {
   display: flex;
   justify-content: center;
+  font-size: small;
+  color: aliceblue;
 }
 
 .pkmnExp {
   display: flex;
   justify-content: center;
+  font-size: small;
+  color: aliceblue;
 }
 .CARD {
  background-color: seashell;
@@ -131,4 +135,28 @@ body {
   margin-bottom: 5px;
   font-size: xx-large;
   font-weight: bold;
+}
+
+.animate__animated.animate__fadeIn {
+  /* --animate-delay: 10s; */
+  --animate-duration: 3s;
+}
+
+.winningHand {
+  color: greenyellow;
+}
+
+.losingHand {
+  color: crimson;
+}
+
+.bottomBox {
+  background-color: grey;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.animate__animated.animate__jackInTheBox {
+  /* --animate-delay: 10s; */
+  --animate-duration: 5s;
 }

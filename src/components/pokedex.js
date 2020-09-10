@@ -101,13 +101,24 @@ console.log(exp2)
 
 
 export default function Pokedex() {
+    let isWinnerHand1;
+    if (exp1 > exp2) {
+        isWinnerHand1 = <h1 className="winText winningHand animate__animated animate__jackInTheBox">WINNER!</h1>
+    } else {
+        isWinnerHand1 = <h1 className="winText losingHand animate__animated animate__jackInTheBox">LOSER!</h1>
+    }
 
-
+    let isWinnerHand2;
+    if (exp2 > exp1) {
+        isWinnerHand2 = <h1 className="winText winningHand animate__animated animate__jackInTheBox">WINNER!</h1>
+    } else {
+        isWinnerHand2 = <h1 className="winText losingHand animate__animated animate__jackInTheBox">LOSER!</h1>
+    }
 
     return (
         <>
         <div className="container">
-        <h1 className="winText">IsWinnervsIsLoser</h1>
+        {isWinnerHand1}
         <p className="animate__animated animate__bounceIn centerText">Total Experience: {exp1}</p>
         <div className="row">
         
@@ -115,11 +126,11 @@ export default function Pokedex() {
         </div>
         </div>
         <div className="container">
-        <h1 className="winText">IsWinnervsIsLoser</h1>
+        {isWinnerHand2}
         <p className="animate__animated animate__bounceIn centerText">Total Experience: {exp2}</p> 
         <div className="row">
         
-        {hand2Arr.map((pkmn) => (<Pokecard key={pkmn.id} id={pkmn.id} name={pkmn.name} type={pkmn.type} base_experience={pkmn.base_experience}/>))}
+        {hand2Arr.map((pkmn) => (<Pokecard key={pkmn.id} id={pkmn.id} name={pkmn.name} type={pkmn.type} base_experience={pkmn.base_experience} />))}
         </div>
         </div>        
         </>

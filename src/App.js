@@ -9,9 +9,10 @@ import Wrapper from "./components/wrapper"
 
 function App() {
   return (
-
+    <>
+    <Wrapper />
     <Pokedex />
-
+    </>
   );
 }
 
