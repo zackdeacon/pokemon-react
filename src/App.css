@@ -158,5 +158,11 @@ body {
 
 .animate__animated.animate__jackInTheBox {
   /* --animate-delay: 10s; */
-  --animate-duration: 5s;
+  --animate-duration: 4s;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
 }

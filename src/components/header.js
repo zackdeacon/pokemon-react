@@ -1,9 +1,14 @@
 import React from "react";
 
-export default function header() {
+export default function Button() {
+
+   function handleChange (e) {
+        window.location.reload();
+    }
+
     return (
-        <div>
-            <h1>Slot Machines!!!!!</h1>
+        <div className="btnDiv">
+            <button type="button" onClick={handleChange} className="btn btn-outline-dark custBtn">Battle!</button>
         </div>
     )
 }
