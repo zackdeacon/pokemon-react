@@ -10,9 +10,11 @@ import Wrapper from "./components/wrapper"
 function App() {
   return (
     <>
-    <Wrapper />
+    {/* <div className="container"> */}
+    
     <Button />
     <Pokedex />
+    {/* </div> */}
     </>
   );
 }

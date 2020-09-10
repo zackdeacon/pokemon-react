@@ -112,13 +112,6 @@
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
-:root {
-  --animate-delay: 3s;
-}
-.container {
-  margin: 50px;
-}
-
 .centerText {
   text-align: center;
   margin-bottom: 25px;
@@ -164,5 +157,7 @@ body {
 .btnDiv {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   /* text-align: center; */
 }
