@@ -42,3 +42,11 @@ Anyone can feel free to contribute or take the code and build on it themselves!
 
     
   No Tests
+  
+## Deployed Link 
+
+ https://pkmn-mini-game.herokuapp.com/
+ 
+## Screen Shot of Deployed Application 
+ ![Screenshot](./public/PokemonShot.jpeg)
+    
