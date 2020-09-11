@@ -40,30 +40,32 @@
 .pkmnName {
   display: flex;
   justify-content: center;
+  font-size: 3vw;
 }
 
 .pkmnImg {
   display: flex;
   justify-content: center;
 }
+
 .pkmnType {
   display: flex;
   justify-content: center;
-  font-size: small;
+  font-size: 2vw;
   color: aliceblue;
 }
 
 .pkmnExp {
   display: flex;
   justify-content: center;
-  font-size: small;
+  font-size: 2vw;
   color: aliceblue;
 }
 .CARD {
  background-color: seashell;
  margin-top: 10px;
  margin-bottom: 10px;
- box-shadow:2px 5px 7px darkorange;
+ box-shadow:2px 5px 7px rgba(43, 41, 41, 0.671);
  
 }
 .row {
@@ -115,7 +117,7 @@
 .centerText {
   text-align: center;
   margin-bottom: 25px;
-  font-size: larger;
+  font-size: 2vw;
   font-weight: bold;
 }
 
