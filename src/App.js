@@ -14,6 +14,8 @@ function App() {
     
     <Button />
     <Pokedex />
+    <Button />
+
     {/* </div> */}
     </>
   );

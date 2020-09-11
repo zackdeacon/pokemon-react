@@ -82,9 +82,9 @@ let hand2Arr = [];
 
 for (let i = 0; i < pokemon.length; i++) {
     let randNum = Math.floor(Math.random() * pokemon.length)
-    if (hand1Arr.length < 6 && !hand1Arr.includes(pokemon[randNum])) {
+    if (hand1Arr.length < 3 && !hand1Arr.includes(pokemon[randNum])) {
     hand1Arr.push(pokemon[randNum])
-    } else if (hand2Arr.length < 6 && !hand2Arr.includes(pokemon[randNum])){
+    } else if (hand2Arr.length < 3 && !hand2Arr.includes(pokemon[randNum])){
         hand2Arr.push(pokemon[randNum])
     }
     
